@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+@import url(bootstrap.min.css);
+@import url(fontawesome-all.min.css);
+@import url(animate.css);
+html,
+body {
+  font-size: 16px;
+  font-family: "Poppins"; }
+
+a {
+  color: #000; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+h4 {
+  font-size: 1.4rem; }
+
+h5 {
+  font-size: 1.2rem; }
+
+h6 {
+  font-size: 1rem; }
+
+.clearfloat:after {
+  display: table;
+  content: '';
+  clear: both; }
+
+@font-face {
+  font-family: 'System';
+  font-style: normal;
+  font-weight: 400;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"); }
+@font-face {
+  font-family: 'Chatthai UI';
+  src: url("../fonts/chatthaiui/cschatthaiui-webfont.eot");
+  src: url("../fonts/chatthaiui/cschatthaiui-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/chatthaiui/cschatthaiui-webfont.woff2") format("woff2"), url("../fonts/chatthaiui/cschatthaiui-webfont.woff") format("woff"), url("../fonts/chatthaiui/cschatthaiui-webfont.ttf") format("truetype"), url("../fonts/chatthaiui/cschatthaiui-webfont.svg#cs_chatthaiuiregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'TF Srivichai';
+  src: url("../fonts/TFSrivichai/tf_srivichai-webfont.eot");
+  src: url("../fonts/TFSrivichai/tf_srivichai-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/TFSrivichai/tf_srivichai-webfont.woff2") format("woff2"), url("../fonts/TFSrivichai/tf_srivichai-webfont.woff") format("woff"), url("../fonts/TFSrivichai/tf_srivichai-webfont.ttf") format("truetype"), url("../fonts/TFSrivichai/tf_srivichai-webfont.svg#tf_srivichairegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'TF Srivichai';
+  src: url("../fonts/TFSrivichai/tf_srivichai_bol-webfont.eot");
+  src: url("../fonts/TFSrivichai/tf_srivichai_bol-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/TFSrivichai/tf_srivichai_bol-webfont.woff2") format("woff2"), url("../fonts/TFSrivichai/tf_srivichai_bol-webfont.woff") format("woff"), url("../fonts/TFSrivichai/tf_srivichai_bol-webfont.ttf") format("truetype"), url("../fonts/TFSrivichai/tf_srivichai_bol-webfont.svg#tf_srivichaibold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+/* Top Bar */
+.main-logo {
+  padding: 0 !important; }
+  .main-logo img {
+    max-width: 64px;
+    height: auto; }
+
+.main-nav {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+/* Main Menu */
+.main-menu > li > a {
+  color: #569bba;
+  text-transform: uppercase;
+  color: #666;
+  font-size: .9rem; }
+.main-menu > li.current-menu-item > a {
+  color: #569bba;
+  font-weight: 700; }
+.main-menu > li + li {
+  margin-left: 1rem; }
+
+/* Page Header */
+.page-header {
+  width: 100%;
+  padding: calc(3vh + 9rem) 0 3vh;
+  background: url("../img/home-slide-1.jpg") center center no-repeat fixed;
+  background-size: cover;
+  color: #FFF; }
+  .page-header .title {
+    font-size: 2.5rem; }
+
+.breadcrumb {
+  background: none;
+  padding: 0;
+  color: #FFF; }
+  .breadcrumb li.breadcrumb-item {
+    font-size: .75rem;
+    letter-spacing: 1px; }
+    .breadcrumb li.breadcrumb-item.active {
+      color: #FFF; }
+    .breadcrumb li.breadcrumb-item a {
+      color: #FFF; }
+    .breadcrumb li.breadcrumb-item:before {
+      color: #FFF; }
+
+/* Home Slide */
+.home-slide {
+  position: relative; }
+  .home-slide .scroll-down {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: auto;
+    margin: auto;
+    color: #FFF;
+    transform: translateY(-100%);
+    text-align: center;
+    letter-spacing: .5rem;
+    font-size: .75rem; }
+
+.main-slide .slide-item {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bgZoom 100s linear infinite;
+  background-attachment: fixed;
+  background-size: cover; }
+@keyframes bgZoom {
+  0% {
+    background-position: 0px 50%; }
+  100% {
+    background-position: -2000px 50%; } }
+  .main-slide .slide-item .slide-title {
+    text-align: center;
+    color: #FFF;
+    max-width: 50%; }
+    .main-slide .slide-item .slide-title .subtitle {
+      font-size: 1.5rem; }
+    .main-slide .slide-item .slide-title .title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1;
+      margin: 2rem 0; }
+    .main-slide .slide-item .slide-title .button-group {
+      margin-top: 2rem; }
+      .main-slide .slide-item .slide-title .button-group .btn {
+        border: solid 1px #FFF;
+        border-radius: 0;
+        color: #FFF;
+        text-transform: uppercase; }
+        .main-slide .slide-item .slide-title .button-group .btn + .btn {
+          margin-left: 1rem; }
+        .main-slide .slide-item .slide-title .button-group .btn:first-child {
+          background: #FFF;
+          color: #569bba; }
+
+/* Section */
+.section-wrapper {
+  padding: 5rem 0; }
+
+.section-header {
+  text-align: center; }
+  .section-header i {
+    color: #569bba; }
+  .section-header .title {
+    font-size: 3rem;
+    color: #569bba;
+    font-weight: 700; }
+  .section-header .desc {
+    font-size: .9rem;
+    margin-bottom: 2rem;
+    color: #666; }
+
+/* Our Services */
+.our-services {
+  background: url("../img/service-bg.jpg") bottom no-repeat;
+  background-size: cover; }
+
+.service-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1; }
+  .service-items .item {
+    width: calc(33.33% - (2rem / 3));
+    flex-direction: column;
+    border-radius: 0;
+    background: #FFF;
+    border: solid 1px #EEE;
+    margin-bottom: 1rem; }
+    .service-items .item:not(:nth-child(3n)) {
+      margin-right: 1rem; }
+    .service-items .item .thumbnail {
+      margin-bottom: 0; }
+      .service-items .item .thumbnail img {
+        max-width: 100%;
+        height: auto; }
+    .service-items .item .caption {
+      padding: 2rem; }
+      .service-items .item .caption .title {
+        font-weight: 700; }
+
+/* Our Product */
+.our-product {
+  background: #f5f5f5; }
+  .our-product .product-items {
+    text-align: center; }
+
+.product-items {
+  display: flex;
+  flex-wrap: wrap; }
+  .product-items .item {
+    text-align: center;
+    background: #FFF;
+    padding: 1rem;
+    width: calc(33.33% - (2rem / 3));
+    text-align: center;
+    border: solid 1px #EEE;
+    margin-bottom: 1rem; }
+    .product-items .item:not(:nth-child(3n)) {
+      margin-right: 1rem; }
+
+/* Content */
+.content-area {
+  padding: 5rem 0; }
+
+/* Product Display */
+.product-display {
+  display: flex;
+  flex-wrap: wrap; }
+  .product-display .product-item {
+    padding: 1rem;
+    width: calc(33.33% - (2rem / 3));
+    text-align: center;
+    border: solid 1px #EEE;
+    margin-bottom: 1rem;
+    display: block; }
+    .product-display .product-item:not(:nth-child(3n)) {
+      margin-right: 1rem; }
+    .product-display .product-item .thumbnail img {
+      max-width: 100%;
+      height: auto; }
+    .product-display .product-item .title {
+      font-size: 1rem;
+      font-weight: 700; }
+    .product-display .product-item .desc {
+      font-size: .75rem;
+      color: #666; }
+    .product-display .product-item .price {
+      font-size: 1.25rem;
+      font-weight: 700; }
+    .product-display .product-item:hover {
+      text-decoration: none !important;
+      border: solid 1px #569bba;
+      color: #569bba; }
+
+/* Product Detail */
+.product-detail .short-desc .title {
+  font-weight: 700; }
+.product-detail .short-desc .desc {
+  font-size: .75rem; }
+.product-detail .more-desc {
+  border: solid 1px #EEE;
+  padding: 2rem;
+  margin-top: 2rem; }
+
+.main-footer {
+  background: url("../img/footer-bg.jpg") center center;
+  background-size: cover;
+  color: #FFF;
+  padding: 10vh 0; }
+
+.footer-menu a {
+  color: #FFF; }
+
+.contact-info {
+  color: #FFF; }
+  .contact-info p {
+    margin-bottom: 0; }
+
+.read-more {
+  display: inline-block;
+  padding-left: 2rem;
+  position: relative;
+  font-size: .75rem;
+  letter-spacing: .15rem;
+  color: #569bba; }
+  .read-more:before {
+    display: block;
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background: #569bba;
+    top: 50%;
+    left: 0;
+    position: absolute; }

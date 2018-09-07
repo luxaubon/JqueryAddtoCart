@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+
+.main-footer {
+    background: url('../img/footer-bg.jpg') center center;
+    background-size: cover;
+    color: #FFF;
+    padding: 10vh 0;
+}
+
+.footer-menu {
+    a {
+        color: #FFF;
+    }
+}
+
+.contact-info {
+    color: #FFF;
+    p {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+
+.read-more {
+    display: inline-block;
+    padding-left: 2rem;
+    position: relative;
+    font-size: .75rem;
+    letter-spacing: .15rem;
+    color: $color-pri;
+
+    &:before {
+        display: block;
+        content: '';
+        width: 1.5rem;
+        height: 1px;
+        background: $color-pri;
+        top: 50%;
+        left: 0;
+        position: absolute;
+
+    }
+}
